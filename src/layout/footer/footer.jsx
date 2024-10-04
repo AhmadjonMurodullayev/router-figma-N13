@@ -1,6 +1,6 @@
 import React from 'react'
 import play from '../../assets/play.png'
-import apps from '../../assets/app.png'
+// import apps from '../../assets/app.png'
 import uz from '../../assets/uz.png'
 import hum from '../../assets/hum.png'
 import pay from '../../assets/pay.png'
@@ -31,7 +31,7 @@ export const Footer = () => {
         <h4>Мобил иловa</h4>
         <div className={styles.appIcons}>
           <img src={play} alt="Google Play" />
-          <img src={apps} alt="App Store" />
+          {/* <img src={apps} alt="App Store" /> */}
         </div>
       </div>
     </div>
