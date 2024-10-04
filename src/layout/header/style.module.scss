@@ -1,0 +1,149 @@
+
+.navlik{
+    margin: 20px 0px 0px ;
+    display: flex;
+    gap: 35px;
+    h2{
+        color: #3F51B5;
+        font-size: 18px;
+        font-weight: 700;
+    }
+  }
+.container {
+    // max-width: 1200px;
+    margin: 0px auto;
+    width: 90%;
+    padding: 10px 0px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    
+    &_sorch {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    &_sorch_box {
+      display: flex;
+      align-items: center;
+      border: 2px solid #DDDDDD;
+      padding: 10px;
+      border-radius: 15px 0px 0px 15px;
+      gap: 10px;
+    }
+  
+    &_inputs {
+      display: flex;
+      align-items: center;
+      border: 2px solid #DDDDDD;
+      border-radius: 0px 15px 15px 0px;
+      gap: 15px;
+    }
+  
+    &_inputbox {
+      padding: 13px;
+    }
+  
+    &_btns {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    &_uzb {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      gap: 10px;
+      border-radius: 14px;
+      border: none;
+      background-color: #EEF4FF;
+      cursor: pointer;
+    }
+  
+    &_user {
+      display: flex;
+      align-items: center;
+      padding: 10px 25px;
+      gap: 10px;
+      border: none;
+      color: white;
+      background-color: #3F51B5;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  
+    &_input {
+      border: none;
+      width: 400px;
+      outline: none;
+      font-size: 15px;
+      transition: width 0.3s ease; 
+    }
+  
+    &_qidiruv {
+      align-items: center;
+      display: flex;
+      padding: 10px 15px;
+      border-left: 2px solid #DDDDDD;
+    }
+  
+    &_h1 {
+      color: #3F51B5;
+    }
+ 
+  
+    @media (max-width: 1100px) {
+      .header_input {
+        width: 300px; 
+      }
+    }
+    @media (max-width: 992px) {
+      .header_input {
+        width: 200px; 
+      }
+    }
+  
+   
+  }
+   @media (max-width: 768px) {
+      .header {
+        justify-content: space-between;
+      }
+  
+      .header_sorch {
+        display: none; 
+      }
+  
+      .header_btns {
+        display: flex;
+        gap: 10px;
+      }
+  
+      .header_uzb {
+        display: none; 
+      }
+  
+      .header_user {
+        flex: 1;
+        justify-content: flex-end;
+      }
+  
+      .header_logo {
+        flex: 1;
+        justify-content: flex-start;
+      }
+  
+      .header_user {
+        width: auto;
+      }
+      .navlik{
+      display: none;
+    }
+  }
