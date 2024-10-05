@@ -1,111 +1,141 @@
 .footer {
-    background-color: #f0f3ff; /* Yuqori qism fon rangi */
-    padding: 30px 0;
-  
-    .footerTop {
+  background-color: #f0f3ff;
+  padding: 30px 0;
+
+  .footerTop {
       display: flex;
       justify-content: space-between;
       padding: 0 50px;
-  
+
       @media (max-width: 768px) {
-        flex-direction: column;
-        gap: 20px;
+          flex-direction: column;
+          gap: 20px;
       }
-    }
-  
-    .column {
+  }
+
+  .column {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-  
+      gap: 15px;
+
       h4 {
-        font-size: 16px;
-        font-weight: 600;
-        color: #000;
-        margin-bottom: 10px;
+          font-size: 18px;
+          font-weight: 600;
+          color: #151a33;
+          margin-bottom: 10px;
+          text-transform: uppercase;
       }
-  
+
       a {
-        color: #333;
-        text-decoration: none;
-        font-size: 14px;
-  
-        &:hover {
-          text-decoration: underline;
-        }
+          color: #555;
+          text-decoration: none;
+          font-size: 14px;
+          transition: color 0.3s;
+
+          &:hover {
+              color: #ff7f4d;
+              text-decoration: underline;
+          }
       }
-    }
-  
-    .appIcons {
+  }
+
+  .appIcons {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-  
+      gap: 15px;
+
       img {
-        width: 120px;
-        height: auto;
+          width: 130px;
+          height: auto;
+          transition: transform 0.3s;
+
+          &:hover {
+              transform: scale(1.05);
+          }
       }
-    }
-  
-    .footerBottom {
+  }
+
+  .footerBottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #151a33; /* Pastki qism fon rangi */
+      background-color: #151a33;
       padding: 20px 50px;
       color: #fff;
-  
+
       @media (max-width: 768px) {
-        flex-direction: column;
-        gap: 20px;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
       }
-    }
-  
-    .socialMedia {
+  }
+
+  .socialMedia {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 15px;
-  
+
       span {
-        font-weight: 500;
+          font-weight: 500;
+          font-size: 16px;
       }
-  
+
       .icons {
-        display: flex;
-        gap: 10px;
-  
-        a {
-          color: #fff;
-          font-size: 20px;
-        }
+          display: flex;
+          gap: 15px;
+
+          a {
+              color: #fff;
+              font-size: 22px;
+              transition: transform 0.3s;
+
+              &:hover {
+                  transform: scale(1.1);
+              }
+          }
       }
-    }
-  
-    .contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      p {
-        margin: 5px 0;
-      }
-    }
-  
-    .payment {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      .paymentIcons {
-        display: flex;
-        gap: 10px;
-  
-        img {
-          width: 50px;
-          height: auto;
-        }
-      }
-    }
   }
-  
+
+  .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+          font-weight: 600;
+          font-size: 16px;
+      }
+
+      p {
+          margin: 5px 0;
+          color: #ddd;
+      }
+  }
+
+  .payment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+          font-weight: 600;
+          font-size: 16px;
+      }
+
+      .paymentIcons {
+          display: flex;
+          gap: 15px;
+
+          img {
+              width: 60px;
+              height: auto;
+              transition: transform 0.3s;
+
+              &:hover {
+                  transform: scale(1.1);
+              }
+          }
+      }
+  }
+}

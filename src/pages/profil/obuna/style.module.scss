@@ -1,0 +1,170 @@
+.all {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    // height: 100vh;
+}
+
+.logs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #ff7f4d;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.log_title {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.logs img {
+    max-height: 150px; 
+    border-radius: 10px;
+}
+
+.obuna {
+    box-shadow: 0px 0px 1px 1px #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.obuna_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%; 
+}
+
+.obuna_box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%; 
+    padding: 20px;
+    border: 1px solid #dddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.h11 {
+    color: #333; 
+    font-size: 20px;
+}
+
+.h3 {
+    color: #333; 
+    font-size: 16px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selects {
+    border: 2px solid #dddd;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px; 
+    transition: border-color 0.3s; 
+}
+
+.selects:focus {
+    border-color: #ff7f4d;
+    outline: none; 
+}
+
+.select {
+    width: 100%; 
+    padding: 5px; 
+    border-radius: 5px;
+    border: none;
+}
+
+.box2_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titls_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.titls_box h4 {
+    margin: 0;
+    color: #555; 
+}
+
+button {
+    padding: 15px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #ff5c3b;
+}
+
+@media (max-width: 768px) {
+    .logs {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .log_title {
+        font-size: 20px;
+    }
+
+    .obuna {
+        flex-direction: column;
+    }
+
+    .obuna_box, .obuna_box2 {
+        width: 100%;
+    }
+
+    .h11, .h3 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .h11, .h3 {
+        font-size: 16px;
+    }
+
+    .logs img {
+        max-height: 120px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}

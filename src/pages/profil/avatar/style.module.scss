@@ -1,0 +1,21 @@
+.avatar{
+   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.09);
+    .img{
+        img{
+            border-radius: 50%;
+
+        }
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
