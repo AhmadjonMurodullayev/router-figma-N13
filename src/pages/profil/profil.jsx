@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import Header from "../../layout/header/header";
 import Avatar from "./avatar/avatar";
 import style from "./style.module.scss";
@@ -21,7 +20,7 @@ export default function Profil() {
       <div className={style.flex}>
         <nav className={style.navbar}>
           <div>
-            <NavLink to="/profil/obuna" className={style.navliks}>
+            <NavLink to="/profil/" className={style.navliks}>
               <Shop /> Обуна бўлиш
             </NavLink>
           </div>
@@ -53,7 +52,7 @@ export default function Profil() {
         </div>
       </div>
       <br />
-      <Footer />
+      {/* <Footer /> */}
     </div>
 </div>
   );

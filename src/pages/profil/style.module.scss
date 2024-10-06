@@ -41,8 +41,7 @@
 
 .box {
     width: 100%;
-    // height: 90vh;
-    // border: 2px solid beige;
+
 }
 
 .navliks {
@@ -55,11 +54,11 @@
     transition: background-color 0.3s;
 }
 
-.navliks:hover {
-    background-color: rgba(0, 0, 255, 0.3);
+.navliks:active {
+    color: rgba(0, 0, 255, 0.3);
 }
 
-.navliks.active {
+.active {
     font-weight: bold;
     color: blue;
     background-color: rgba(0, 0, 255, 0.5);

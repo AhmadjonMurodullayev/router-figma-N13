@@ -11,7 +11,7 @@ export default function DashboardProfil() {
   return (
     <div className={style.all}>
       <Routes>
-        <Route path="obuna" element={<Obuna />} />
+        <Route path="/" index element={<Obuna />} />
         <Route path="hisob" element={<Hisob />} />
         <Route path="kitoblarim" element={<Kitoblarim />} />
         <Route path="saqlangan" element={<Saqlangan />} />

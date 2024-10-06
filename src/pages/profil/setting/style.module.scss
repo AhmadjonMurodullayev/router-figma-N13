@@ -2,5 +2,42 @@
     width: 100%;
     height: 100%;
     color: white;
-    background-color: blueviolet;
+    box-shadow: 0px 0px 1px 1px #dddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px 25px;
+}
+.h1{
+    color: black;
+}
+.h4{
+    color: #3F51B5;
+}
+.h42{
+    color: black;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.imgs{
+    border: 2px solid #3F51B5;
+    border-radius: 50%;
+}
+.sorchs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sorch_input{
+    width: 300px;
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 2px solid #dddd;
+}
+.btnss{
+    width: 300px;
 }
